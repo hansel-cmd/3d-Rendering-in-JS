@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/code.js"></script>
+</head>
+<body>
+    <script>
+        function move() {
+        if(tmr2 === undefined) {
+          tmr2 = setInterval(canvasframe, 50);
+        } else {
+          clearInterval(tmr2);
+          tmr2 = undefined;
+        }
+      };
+
+      move()
+    </script>
+    <!-- <p>Here it is: <button onclick="anim1();">toggle animation</button></p> -->
+    <!-- <pre id="d" style="background-color:#000; color:#ccc; font-size: 10pt;">
+    </pre> -->
+    
+    <div style="text-align: center;">
+        <div style="margin: auto;">
+            <button onclick="anim2();">Click me</button></p>
+            <canvas id="canvasdonut" width="320" height="240" style="background-color: #000; color: #ccc; font-size: 10pt;">
+            </canvas>
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
